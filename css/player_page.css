@@ -1,0 +1,123 @@
+#songPage1 {
+    /*position: fixed;*/
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(255, 250, 250, 1);
+    z-index: 3;
+    overflow: auto;
+    overflow-x: visible;
+
+
+}
+
+.item-inner {
+    overflow-x: auto;
+}
+
+/*
+#mySongList {
+    pointer-events: none;  
+}*/
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin-top: 0px;
+}
+
+.inputView {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 2;
+    width: 80vw;
+    cursor: pointer;
+    background-color: silver;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+
+#btnPlay {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 2;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    background: #ECE9E0;
+    border: 3px solid black;
+    border-radius: 15px;
+    font-size: 1.2rem;
+
+}
+
+#btnPhonetics {
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 140px;
+    height: 40px;
+    cursor: pointer;
+    background: #ECE9E0;
+    border: 3px solid black;
+    border-radius: 15px;
+    font-size: 1rem;
+}
+
+#btnPhonetics:before {
+    content: "";
+    position: absolute;
+    left: 20%;
+    top: -3px;
+    width: 60%;
+    height: 3px;
+    background: #ECE9E0;
+}
+
+#btnPhonetics:after {
+    content: "Формат";
+    position: absolute;
+    right: 10%;
+    top: -9px;
+    width: 80%;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+
+
+/* Параметры ячеек таблицы, которая отображает субтитры.   */
+
+div.item-inner {
+    padding: 3px;
+}
+
+table {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 2px;
+    margin: 10px auto;
+    width: auto;
+    white-space: nowrap;
+}
+
+tr:nth-child(2) {
+    font-weight: bold;
+    display: none;
+}
+
+tr:nth-child(3) {
+    font-weight: bold;
+}
+
+td:nth-child(odd) {
+    background: rgba(0, 0, 0, 0);
+}
+
+td:nth-child(even) {
+    background: #f2f2f2;
+}
